@@ -41,10 +41,4 @@ public class AppModule {
         return new CategoryRepository(service);
     }
 
-    @Provides
-    @Singleton
-    public CategoryViewModel provideViewModel(CategoryRepository repo) {
-        return new CategoryViewModel(repo);
-    }
-
 }
